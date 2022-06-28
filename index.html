@@ -4,83 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/snuhcommon.css">
-    <link rel="stylesheet" href="/css/snuh.css">
+    <link rel="stylesheet" href="css/snuhcommon.css">
+    <link rel="stylesheet" href="css/snuh.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <div id="wrap">
-        <header id="header">
-            <ul class="depth01">
-                <li><a href="#"><img src="/img/left.png" alt="왼쪽상단"></a></li>
-                <li><a href="#"><img src="/img/logo.png" alt="로고 이미지"></a></li>
-                <li>
-                    <ul class="depth02">
-                        <li><a href="#">원격</a></li>
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">Language</a></li>
+  
+        <header id="hd">
+            <div id="container">
+                <ul class="depth01 d-flex justify-content-between align-items-center">
+                    <li><a href="#"><img src="img/left.png" alt="왼쪽상단"></a></li>
+                    <li><a href="#"><img src="img/logo.png" alt="로고 이미지"></a></li>
+                    <li>
+                        <ul class="depth02 d-flex justify-content-between align-items-center">
+                            <li><a href="#">원격</a></li>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">Language</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <nav>
+                    <ul class="d-flex justify-content-between align-items-center">
+                        <li><a href="#"><img src="img/menu_FILL0_wght400_GRAD0_opsz48.png" alt="메뉴"></a></li>
+                        <li>
+                            <ul class="navbar d-flex justify-content-between align-items-center">
+                                <li><a href="#">진료안내</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">건강정보</a></li>
+                                <li><a href="#">고객참여</a></li>
+                                <li><a href="#">병원소개</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="img/search_FILL0_wght400_GRAD0_opsz48.png" alt="돋보기"></a></li>
                     </ul>
-                </li>
-            </ul>
-            <nav>
-                 <ul>
-                     <li><a href="#"><img src="/img/menu_FILL0_wght400_GRAD0_opsz48.png" alt="메뉴"></a></li>
-                     <li>
-                         <ul class="navbar">
-                             <li><a href="#">진료안내</a></li>
-                             <li><a href="#">이용안내</a></li>
-                             <li><a href="#">건강정보</a></li>
-                             <li><a href="#">고객참여</a></li>
-                             <li><a href="#">병원소개</a></li>
-                         </ul>
-                     </li>
-                     <li><a href="#"><img src="/img/check_circle_FILL0_wght400_GRAD0_opsz48.png" alt="돋보기"></a></li>
-                 </ul>
-            </nav>
+                </nav>
+            </div>
         </header>
         <section id="banner">
-            <a href="#"><img src="/img/banner.png" alt="배너"></a>
+           
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="./img/slide1.jpeg" alt="슬라이드1"></div>
+                  <div class="swiper-slide"><img src="./img/slide2.jpeg" alt="슬라이드2"></div>
+                  <div class="swiper-slide"><img src="./img/slide3.jpeg" alt="슬라이드3"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+              </div>
         </section>
         <section id="intro">
             <ul>
-                <li>
+                <li class="first">
                     <p>진료예약</p><br>
-                    <p>빠르고 쉽게 진료예약을<br>
-                    하실 수 있습니다.</p>
+                    <p>빠르고 쉽게 진료예약을</p>
+                    <p>하실 수 있습니다.</p>
+                    <br>
+                    <br>
+                   
                     <ul class="subintro">
                         <li><a href="#">진료예약</a></li>
                         <li><a href="#">첫예약상담</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="second">
                     <p>진료과/센터</p><br>
                     <p>병원의 진료과 / 센터를<br>
                     상세히 확인할 수 있습니다.</p>
+                    <br>
+                    <br>
+                   
                     <ul class="subintro">
                         <li><a href="#">본원</a></li>
                         <li><a href="#">어린이병원</a></li>
                         <li><a href="#">암병원</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="third">
                     <p>진료안내</p>
-                    <p>대표전화 <strong>1599-5700</strong><br>
-                    암환자 상담 <strong>02-2072-0707</strong></p>
+                    <br>
+                  
+                    <p>대표전화 <strong>1599-5700</strong></p>
+                    <p>암환자 상담 <strong>02-2072-0707</strong></p>
+                    <br>
+                    <br>
+                   
                     <ul class="subintro">
                         <li><a href="#">외래안내</a></li>
                         <li><a href="#">진료시간표</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="fourth">
                     <ul class="login">
                         <li>
-                            <input type="radio" name="login" id="log1">
+                            <input type="radio" name="login" id="log1" checked>
                             <label for="log1">로그인</label>
                             <div class="submit">
                                 <input type="text" placeholder="아이디/진찰권 번호">
                                 <input type="password" placeholder="비밀번호">
-                                <span>회원가입</span>
+                                <div>
+                                    <span>회원가입</span>
                                 <span>아이디/비밀번호찾기</span>
+                                </div>
+                                
                                 <p><a href="#">로그인</a></p>
                             </div>
                         </li>
@@ -90,8 +121,11 @@
                             <div class="submit">
                                 <input type="text" placeholder="아이디/진찰권 번호">
                                 <input type="password" placeholder="비밀번호">
-                                <span>회원가입</span>
+                                <div>
+                                    <span>회원가입</span>
                                 <span>아이디/비밀번호찾기</span>
+                                </div>
+                                
                                 <p><a href="#">비회원로그인</a></p>
                             </div>
                         </li>
@@ -103,51 +137,68 @@
             <ul>
                 <li class="find">
                     <p>의료진 찾기</p>
-                    <p>서울대학교병원의 의료진은<br>
-                        환자를 위해 항상 노력하고 있습니다 </p>
+                    <br>
+                    <p>서울대학교병원의 의료진은<p>
+                    <p>환자를 위해 항상 노력하고 있습니다 </p>
+                    <br>
                     <input type="text" placeholder="의료진/질병명 검색하기">
                     <button>검색</button>
                 </li>
-                <li>
+                <li class="notice">
                     <ul>
                         <li>
-                            <input type="radio" name="info" id="info1">
-                            <label for="info1">병원소식</label>
-                            <div class="info_article">
+                            <div class="noticename">
+                                <input type="radio" name="info" id="info1" checked>
+                                <label for="info1">병원소식</label>
+                            </div>
+                           
+                            <div class="info_article position-absolute">
                                 <p>격리면제자 외래 진료/검사안내</p>
                                 <p>2021-07-20</p>
                             </div>
                         </li>
                         <li>
-                            <input type="radio" name="info" id="info2">
-                            <label for="info2">채용</label>
-                            <div class="info_article">
+                            <div class="noticename">
+                                <input type="radio" name="info" id="info2">
+                                <label for="info2">채용</label>
+                            </div>
+                           
+                            <div class="info_article position-absolute">
                                 <p>2022년도 운영기능직(간호보조)블라인드 직원채...</p>
                                 <p>2022-06-03</p>
                             </div>
-                        </li>
+                        
                         </li>
                         <li>
-                            <input type="radio" name="info" id="info3">
-                            <label for="info3">강좌</label>
-                            <div class="info_article">
+                            <div class="noticename">
+                                <input type="radio" name="info" id="info3">
+                                <label for="info3">강좌</label>
+                            </div>
+                            
+                            <div class="info_article position-absolute">
                                 <p>2022년 6월 암환자와 가족을 위한 교육안내</p>
                                 <p>2022-05-24</p>
                             </div>
-                        </li>
+                        
                         </li>
                         <li>
-                            <input type="radio" name="info" id="info4">
-                            <label for="info4">입찰</label>
-                            <div class="info_article">
+                            <div class="noticename">
+                                <input type="radio" name="info" id="info4">
+                                <label for="info4">입찰</label>
+                            </div>
+                           
+                            <div class="info_article position-absolute">
                                 <p>2021년 녹색제품 구매이행계획</p>
                                 <p>2021-08-26</p>
                             </div>
                         </li>
                         <li>
-                            <input type="radio" name="info" id="info5">
-                            <label for="info5">언론보도</label>
-                            <div class="info_article">
+                            <div class="noticename">
+                                <input type="radio" name="info" id="info5">
+                                <label for="info5">언론보도</label>
+                            </div>
+                         
+                            <div class="info_article position-absolute">
                                 <p>'모발생물학'의 모든 것</p>
                                 <p>2022-05-29</p>
                             </div>
@@ -161,9 +212,10 @@
         <section id="third">
             <ul>
                 <li id="hotissue">
+                    
                     <p>SNUH 핫이슈</p>
                     <ul>
-                        <li><img src="/img/hotissue.jpeg" alt="핫이슈"></li>
+                        <li><img src="img/hotissue.jpeg" alt="핫이슈"></li>
                         <li>
                             <p><a href="#">재활의학과 외래 이전 안내</a></p>
                             <p><a href="#">22년 5월 30일(월)부터 이전장소에서 재활의학과 외래 진료를 시작합니다.</a></p>
@@ -199,6 +251,28 @@
         <section></section>
         <section></section>
         <section></section>
-    </div>
+<script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: { delay: 3000,},
+    
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    });
+</script>
 </body>
 </html>
