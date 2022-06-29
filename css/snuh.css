@@ -44,7 +44,7 @@ body{
     width: 250px;
 }
 
-nav{}
+
 
 .navbar > li > a{
     display: block;
@@ -299,7 +299,7 @@ nav{}
 
 #third{
     width: 1200px;
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
 }
 #third > ul{
     display: flex;
