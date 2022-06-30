@@ -229,7 +229,7 @@ body{
     background-size: contain;
 }
 
-.find::after{
+.find > div::after{
     content: "";
     display: block;
     clear: both;
@@ -243,15 +243,20 @@ body{
     
     margin-bottom: 5px;
 }
-.find input{
+
+.find > div{
+    margin-top: -10px;
+}
+.find >div >input{
     float: left;
     line-height: 30px;
     width: 180px;
     border-radius: 0;
     border: 1px solid #2663ba;
+    
 }
 
-.find button{
+.find >div >button{
     float: left;
     line-height: 30px;
     width: 60px;
