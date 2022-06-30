@@ -229,7 +229,7 @@ body{
     background-size: contain;
 }
 
-.find::after{
+.find>div::after{
     content: "";
     display: block;
     clear: both;
@@ -251,7 +251,10 @@ body{
     border: 1px solid #2663ba;
 }
 
-.find button{
+.find > div{
+    margin-top: -10px;
+}
+.find > div >button{
     float: left;
     line-height: 30px;
     width: 60px;
@@ -261,7 +264,7 @@ body{
     color: white;
 }
 
-.notice > ul{
+.notice >div > ul{
     display: flex;
     width: 60%;
     margin: 30px 0 0 40px;
